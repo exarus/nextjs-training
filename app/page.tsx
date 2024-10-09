@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <div className="min-h-screen font-sans">
       <Navigation />
-      <main className="relative min-h-screen bg-cover bg-no-repeat bg-center flex flex-col items-center justify-center gap-10 lg:items-start lg:pl-[206px]">
-        <div className="absolute inset-0 bg-[url(/victoria.avif)] opacity-50 bg-cover bg-no-repeat bg-center -z-20"></div>
+      <main className="relative h-screen max-h-[1440px] bg-cover bg-no-repeat bg-center flex flex-col items-center justify-center gap-10 lg:items-start lg:pl-[206px]">
+        <div className="absolute inset-0 bg-[url(/victoria.avif)] opacity-50 bg-cover bg-no-repeat bg-top -z-20"></div>
         <div className="flex flex-col font-title leading-[calc(11/12)] items-center lg:items-start text-7xl sm:text-8xl lg:text-[120px]">
           <div>Victoria</div>
           <div>Bianchini</div>
