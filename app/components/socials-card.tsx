@@ -1,5 +1,13 @@
-export const SocialsCard = ({ img, icon, name, url }: PropsType) => (
-  <div className="relative h-[385px] flex flex-col items-center justify-center gap-4 leading-[1.4]">
+export const SocialsCard = ({
+  img,
+  icon,
+  name,
+  url,
+  square = false,
+}: PropsType) => (
+  <div
+    className={`relative flex flex-col items-center justify-center gap-4 leading-[1.4] h-[385px] ${square ? "aspect-square" : ""}`}
+  >
     <div
       className="absolute inset-0 opacity-50 bg-top bg-cover -z-10"
       style={{ backgroundImage: `url(${img})` }}
@@ -23,4 +31,5 @@ type PropsType = {
   icon: string;
   name: string;
   url: string;
+  square?: boolean;
 };

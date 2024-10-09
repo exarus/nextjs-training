@@ -10,7 +10,7 @@ const bebasNeue = Bebas_Neue({
 });
 const poppins = Poppins({
   variable: "--font-poppins",
-  weight: "500",
+  weight: ["400", "500", "600"],
   subsets: ["latin"],
   display: "swap",
 });
